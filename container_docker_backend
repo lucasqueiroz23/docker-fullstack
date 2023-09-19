@@ -1,0 +1,8 @@
+Ao criar um container, lembre-se:
+
+- exponha a porta com --publish
+
+- coloque todas as dependências no arquivo de dependências (requirements.txt, package.json, etc)
+
+- no dockerfile, lembre-se de rodar um comando para instalar as dependências
+
