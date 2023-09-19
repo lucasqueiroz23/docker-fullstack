@@ -1,0 +1,36 @@
+1o passo: criar um Dockerfile
+
+No Dockerfile, você deve especificar como se cria uma imagem.
+Cada linha de um Dockerfile tem o seguinte formato:
+
+COMANDO argumento
+
+O Dockerfile é simplesmente um arquivo chamado "Dockerfile", com D maiúsculo.
+Ele define como vai ser criada a imagem.
+
+2o passo: criar a imagem docker
+
+Com base no Dockerfile, rode o comando
+`docker build <nome_imagem> <diretório em que se encontra o Dockerfile>`
+
+Você ainda pode usar flags, como -t, que dá um nome mais legível à imagem.
+
+3o passo: rodar o container docker
+
+Criada a imagem, rode o container: 
+
+`docker run <nome_imagem>`.
+
+Dependendo da aplicação, você deve usar algumas flags específicas.
+
+4o passo: ao fim, pare o container
+
+`docker stop <id_container>`
+
+Para ver os containers que existem, use `docker ps`.
+
+Depois, remova o container: `docker rm <id_container>`.
+Para pará-lo e removê-lo num só comando, use docker rm com a flag -f.
+
+Se você quiser que o container escute chamadas no host, use, no passo de run, a flag
+`--publish <p1>:<p2>`, onde p2 é a porta do container que é mapeada para a porta p1, no host

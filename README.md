@@ -5,6 +5,11 @@ O objetivo deste repositório é de servir como um agregado de tutoriais para de
 ## Tópicos abordados
 
 - Desenvolvimento Front-End com React
+
 - Desenvolvimento Back-End com NodeJS e algumas libs/frameworks
+
 - Docker
+
 - Conceitos gerais
+
+  
